@@ -20,7 +20,7 @@ class Shopping_cart:
         subtotal = 0
         for product in self.cart:
             subtotal += product.base_price 
-        return subtotal
+        return f'Subtotal: {subtotal}'
     
     def total_after_tax(self):
         total = 0
@@ -31,8 +31,35 @@ class Shopping_cart:
         
 #The shopping carts 
 
+abigail = Shopping_cart('Abigail')
+ekua = Shopping_cart('Ekua')
+dustin = Shopping_cart('Dustin')
+duncan = Shopping_cart('Duncan')
 
-    
+#show the empty carts 
+print('\nArriving at the store.\n')
+print(abigail)
+print(ekua)
+print(dustin)
+print(duncan)
 
-    
+#add items to carts 
+print('\nFolks get the products they need:\n')
+abigail.add_to_cart(Product('apples', 1, 0.08)) #not sure why products are not adding to the list via variable names 
+abigail.add_to_cart(Product('cheese', 6, 0.08))
+print(abigail)  
+
+ekua.add_to_cart(Product('chips', 4, 0.08))
+ekua.add_to_cart(Product('salsa', 5, 0.08))
+print(ekua)
+
+dustin.add_to_cart(Product('soda', 3, 0.08))
+print(dustin)
+
+duncan.add_to_cart(Product('apples', 1, 0.08))
+duncan.add_to_cart(Product('chips', 4, 0.08))
+duncan.add_to_cart(Product('cheese', 6, 0.08))
+duncan.add_to_cart(Product('salsa', 5, 0.08))
+duncan.add_to_cart(Product('soda', 3, 0.08))
+print(duncan)
 
