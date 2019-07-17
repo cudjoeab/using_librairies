@@ -9,7 +9,7 @@ class Shopping_cart:
         return f"{self.name}'s cart: {self.cart}"
     
     def add_to_cart(self, product):
-        self.cart.append(product) 
+        self.cart.append(Product) 
         return f'{product.name} added to cart. Your cart: {self.cart}.'
 
     def remove_from_cart(self, product):
@@ -27,6 +27,7 @@ class Shopping_cart:
         for product in self.cart:
             total += product.price_after_tax
         return f'Your total is ${total}.'
+
 
         
 #The shopping carts 
