@@ -20,22 +20,5 @@ class Product:
         return price 
     
 
-#products 
-apple = Product('apples', 1, 0.08)
-chips = Product('chips', 4, 0.08)
-cheese = Product('cheese', 6, 0.08)
-salsa = Product('salsa', 5, 0.08)
-soda = Product('soda', 3, 0.08)
 
-print(apple)
-print(chips)
-print(cheese)
-print(salsa)
-print(soda)
-
-print(apple.price_after_tax())
-print(chips.price_after_tax())
-print(cheese.price_after_tax())
-print(salsa.price_after_tax())
-print(soda.price_after_tax())
 
