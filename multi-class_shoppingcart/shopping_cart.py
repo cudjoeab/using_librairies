@@ -1,3 +1,5 @@
+from product import Product
+
 class Shopping_cart:
     def __init__(self, name):
         self.name = name
