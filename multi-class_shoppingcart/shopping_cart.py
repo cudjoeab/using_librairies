@@ -18,8 +18,13 @@ class Shopping_cart:
     
     def total_tax(self, cart):
         for product in cart:
-            total += self.total_tax
-        return total
+            total_tax_sum += self.total_tax
+        return total_tax_sum
+    
+    def total(self, cart):
+        total = subtotal_sum + total_tax_sum 
+        return 
+
         
         
     
