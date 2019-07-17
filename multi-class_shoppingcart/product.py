@@ -8,6 +8,9 @@ class Product:
         self.base_price = base_price
         self.tax_rate = tax_rate
 
+    def __str__(self):
+        return f'{self.name} costs {self.base_price} plus tax: {self.tax_rate}.'
+
     def calculate_tax(self):
         tax =  self.base_price * self.tax_rate   
         return tax 
@@ -24,9 +27,9 @@ cheese = Product('cheese', 6, 0.08)
 salsa = Product('salsa', 5, 0.08)
 soda = Product('soda', 3, 0.08)
 
-# print(apple.price_after_tax())
-# print(chips.price_after_tax())
-# print(cheese.price_after_tax())
-# print(salsa.price_after_tax())
-# print(soda.price_after_tax())
+print(apple.price_after_tax())
+print(chips.price_after_tax())
+print(cheese.price_after_tax())
+print(salsa.price_after_tax())
+print(soda.price_after_tax())
 
