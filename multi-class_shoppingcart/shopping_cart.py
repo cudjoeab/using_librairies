@@ -19,14 +19,14 @@ class Shopping_cart:
     def total_before_tax(self):
         subtotal = 0
         for product in self.cart:
-            subtotal += product.base_price 
+            subtotal += product.base_price
         return f'Subtotal: {subtotal}'
     
     def total_after_tax(self):
         total = 0
         for product in self.cart:
             total += product.price_after_tax
-        return total 
+        return f'Your total is ${total}.'
 
         
 #The shopping carts 
@@ -63,3 +63,8 @@ duncan.add_to_cart(Product('salsa', 5, 0.08))
 duncan.add_to_cart(Product('soda', 3, 0.08))
 print(duncan)
 
+#calculate subtotal and total 
+print('\nPayment at the till\n')
+
+#for abigail
+print(abigail.total_after_tax())
